@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>:root{color-scheme:light}body{margin:0}[hidden]{display:none!important}</style>
-<title>SIRAMI Dashboard</title>
+<title>PRISMA Dashboard</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: satu cangkang ponsel (maks 420px) dengan 5 tab; Prediksi Pertumbuhan SIRAMI digabung ke gaya dashboard IoT biru-teal. */
+/* Layout: satu cangkang ponsel (maks 420px) dengan 5 tab; Prediksi Pertumbuhan PRISMA digabung ke gaya dashboard IoT biru-teal. */
 :root{
   --bg:#F0F4F8; --card:#FFFFFF; --fg:#0D1B2A; --muted:#5A6A7E; --line:#E3EAF2; --track:#EEF2F7;
   --primary:#1565C0; --accent:#00897B; --on-primary:#FFFFFF;
@@ -171,7 +171,7 @@ nav.bar5 button[aria-selected="true"] svg{stroke-width:2.5}
 <div class="shell">
   <header class="top">
     <div>
-      <div class="brand"><span class="logo"><svg viewBox="0 0 24 24"><path d="M12 3s6 6.2 6 10.4A6 6 0 0 1 6 13.4C6 9.2 12 3 12 3z"/></svg></span>SIRAMI</div>
+      <div class="brand"><span class="logo"><svg viewBox="0 0 24 24"><path d="M12 3s6 6.2 6 10.4A6 6 0 0 1 6 13.4C6 9.2 12 3 12 3z"/></svg></span>PRISMA</div>
       <div class="loc"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg>Desa Galuk, Kedungtuban, Blora</div>
     </div>
     <button class="bell" id="bell" aria-label="Notifikasi: 2 peringatan baru"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.300 21a1.940 1.940 0 0 0 3.400 0"/></svg><b>2</b></button>
@@ -194,7 +194,7 @@ nav.bar5 button[aria-selected="true"] svg{stroke-width:2.5}
           <div><small>Hujan</small><b>2,4 mm</b></div>
           <div><small>UV</small><b>6 · Tinggi</b></div>
         </div>
-        <div class="aistrip"><b>SIRAMI AI:</b> Kondisi optimal. Irigasi pagi disarankan pukul 07:30, sekitar 12 L per blok.</div>
+        <div class="aistrip"><b>PRISMA AI:</b> Kondisi optimal. Irigasi pagi disarankan pukul 07:30, sekitar 12 L per blok.</div>
       </div>
 
       <div class="pad sec">
@@ -292,7 +292,7 @@ nav.bar5 button[aria-selected="true"] svg{stroke-width:2.5}
         <div class="card stack" style="gap:8px">
           <div class="h2" style="font-size:13.5px;margin-bottom:2px">Rekomendasi</div>
           <div id="recs" class="stack" style="gap:8px"></div>
-          <p class="note">Halaman ini memakai model sederhana berbasis faktor stres untuk demonstrasi. Pada sistem SIRAMI, prediksi tinggi, fase, dan hasil panen dihitung oleh model hibrida CNN-LSTM di cloud dari data sensor dan input petani, lalu dibandingkan dengan model pembanding.</p>
+          <p class="note">Halaman ini memakai model sederhana berbasis faktor stres untuk demonstrasi. Pada sistem PRISMA, prediksi tinggi, fase, dan hasil panen dihitung oleh model hibrida CNN-LSTM di cloud dari data sensor dan input petani, lalu dibandingkan dengan model pembanding.</p>
         </div>
       </div>
     </section>
@@ -327,7 +327,7 @@ nav.bar5 button[aria-selected="true"] svg{stroke-width:2.5}
         <div class="card stack" style="gap:16px">
           <div class="h2" style="font-size:13.5px">Pengaturan sistem</div>
           <div class="set"><div><b>Irigasi otomatis</b><span class="sub">Berdasarkan sensor kelembapan</span></div><button class="switch" role="switch" aria-checked="true" aria-label="Irigasi otomatis" style="--sw:var(--primary)"></button></div>
-          <div class="set"><div><b>Mode AI SIRAMI</b><span class="sub">Rekomendasi irigasi dan fertigasi</span></div><button class="switch" role="switch" aria-checked="true" aria-label="Mode AI SIRAMI" style="--sw:var(--accent)"></button></div>
+          <div class="set"><div><b>Mode AI PRISMA</b><span class="sub">Rekomendasi irigasi dan fertigasi</span></div><button class="switch" role="switch" aria-checked="true" aria-label="Mode AI PRISMA" style="--sw:var(--accent)"></button></div>
           <div class="set"><div><b>Mode malam (22:00–05:00)</b><span class="sub">Kurangi konsumsi energi</span></div><button class="switch" role="switch" aria-checked="false" aria-label="Mode malam" style="--sw:var(--violet)"></button></div>
           <div class="set"><div><b>Sensor hujan</b><span class="sub">Hentikan irigasi saat hujan</span></div><button class="switch" role="switch" aria-checked="true" aria-label="Sensor hujan" style="--sw:var(--primary)"></button></div>
           <div class="set"><div><b>Tema gelap</b><span class="sub">Ikuti pengaturan perangkat bila mati</span></div><button class="switch" id="themeSw" role="switch" aria-checked="false" aria-label="Tema gelap" style="--sw:var(--primary)"></button></div>
@@ -338,7 +338,7 @@ nav.bar5 button[aria-selected="true"] svg{stroke-width:2.5}
           <div class="dev"><span>Sensor</span><span>tanah, DHT22, level tangki</span></div>
           <div class="dev"><span>Koneksi</span><span>MQTT · terhubung</span></div>
           <div class="dev"><span>Terakhir sinkron</span><span>09:38:22</span></div>
-          <div class="dev"><span>ID perangkat</span><span>SIRAMI-GLK-001</span></div>
+          <div class="dev"><span>ID perangkat</span><span>PRISMA-GLK-001</span></div>
         </div>
         <p class="sub" style="margin:0;text-align:center">Semua angka sensor di halaman ini adalah data contoh untuk demonstrasi.</p>
       </div>
