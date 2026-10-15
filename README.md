@@ -1,8 +1,8 @@
-# PRISMA Dashboard
+# SIRAMI Dashboard
 
-Dashboard web satu halaman untuk PRISMA (Precision Irrigation, Solar, and Machine Learning: sistem irigasi presisi berbasis panen air hujan, tenaga surya, dan AI) di Desa Galuk, Kedungtuban, Blora.
+Dashboard web satu halaman untuk SIRAMI (Sistem Irigasi Presisi berbasis panen air hujan, tenaga surya, dan AI) di Desa Galuk, Kedungtuban, Blora.
 
-Gaya visual mengikuti desain Figma Make "Premium IoT Dashboard UI". Fitur prediksi pertumbuhan cabai berasal dari web PRISMA Growth.
+Gaya visual mengikuti desain Figma Make "Premium IoT Dashboard UI". Fitur prediksi pertumbuhan cabai berasal dari web SIRAMI Growth.
 
 ## Isi
 - **Beranda:** cuaca, sensor lapangan, tangki hujan 15 m³, panel surya 500 Wp, aktivitas terbaru
@@ -13,7 +13,7 @@ Gaya visual mengikuti desain Figma Make "Premium IoT Dashboard UI". Fitur predik
 
 ## Catatan
 - Semua angka sensor adalah data contoh untuk demonstrasi.
-- Prediksi di halaman ini memakai model sederhana berbasis faktor stres. Pada sistem PRISMA, prediksi dihitung model hibrida CNN-LSTM di cloud.
+- Prediksi di halaman ini memakai model sederhana berbasis faktor stres. Pada sistem SIRAMI, prediksi dihitung model hibrida CNN-LSTM di cloud.
 
 ## Menjalankan
 Buka `index.html` di browser. Tidak ada proses build.
